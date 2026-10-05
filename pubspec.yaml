@@ -1,0 +1,56 @@
+name: nart_chat
+description: Koyu temalı, yerel geçmişli yapay zeka sohbet uygulaması.
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.6.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.5
+  path: ^1.9.1
+  dio: ^5.9.0
+  image_picker: ^1.2.0
+  file_picker: ^8.1.7
+  flutter_markdown: ^0.7.7+1
+  flutter_highlight: ^0.7.0
+  flutter_math_fork: ^0.7.3
+  flutter_image_compress: ^2.4.0
+  syncfusion_flutter_pdf: ^30.1.40
+  share_plus: ^11.0.0
+  speech_to_text: ^7.0.0
+  flutter_tts: ^4.2.0
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/branding/nart_icon.png
+  adaptive_icon_background: "#0C0F14"
+  adaptive_icon_foreground: assets/branding/nart_icon.png
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: assets/branding/nart_icon.png
+    background_color: "#0C0F14"
+    theme_color: "#0C0F14"
+  windows:
+    generate: true
+    image_path: assets/branding/nart_icon.png
+    icon_size: 256
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/branding/nart_splash.png
